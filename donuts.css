@@ -1,0 +1,611 @@
+/* Start global rules */
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    background-image: linear-gradient(90deg, #FFC1CC, #FF6699);
+}
+
+.header-holder {
+    height: 10vh;
+}
+
+/* End global rules */
+/* Start Header */
+.header {
+    width: 100%;
+    margin: 0 auto;
+    height: 10vh;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.header .img {
+    background-image: url(./images/Logo.png);
+    background-size: cover;
+    float: left;
+    width: 6vh;
+    height: 6vh;
+    scale: 2.5;
+    padding: 0;
+    margin: 2vh;
+}
+
+.header ul {
+    width: calc(100% - 20vh);
+    margin: 0 auto;
+    float: right;
+    text-align: center;
+    padding: 4vh 0;
+    font-size: 3vh;
+    margin-right: 10vh;
+}
+
+.header ul li {
+    display: inline;
+    padding: 4vh;
+}
+
+.header ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 3vh;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.header ul li a::before {
+    content: " ";
+    position: absolute;
+    top: 3.2vh;
+    left: 50%;
+    width: 0%;
+    height: 0.2vh;
+    border-radius: 2.5vh;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+}
+
+.header ul li a:hover {
+    color: orangered;
+    transition: all .5s ease-in-out;
+}
+
+.header ul li a:active {
+color: orangered;
+}
+
+.header ul li a:hover::before {
+    width: 100%;
+    transition: all .4s ease-in-out;
+    transform: translate(-50%, 0);
+    background-color: orangered;
+}
+
+
+/* End Header */
+
+/* Start Home */
+
+.home {
+    margin: 0 auto;
+}
+
+.home .welcomes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    z-index: -1;
+}
+
+.home .welcomes h1 {
+    color: #fe9a98;
+    text-align: center;
+    font-size: 13.5rem;
+    font-weight: bold;
+    letter-spacing: 2rem;
+    opacity: 90%;
+}
+
+.home .home-content {
+    margin: 0 auto;
+    width: 100%;
+    height: 90vh;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-content h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+}
+
+.home-content .arrow {
+    display: block;
+    color: #fff;
+    font-size: 70px;
+    cursor:default;
+}
+
+.home-content button {
+    font-size: 25px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.home .icons {
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 25vh 0;
+    height: 30vh;
+    width: 10%;
+}
+
+.home .icons li i:hover {
+    color: orangered;
+    transition: all .5s ease;
+}
+
+.home .icons li {
+    height: fit-content;
+    width: fit-content;
+    padding: 25px 0;
+    font-size: 20px;
+}
+
+.home-content .left-content {
+    float: left;
+    width: 30%;
+    height: 90vh;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+.home-content .right-content>button {
+    background-color: #FFB9B9;
+    color: #000;
+}
+
+.home-content .left-content>button {
+    background-color: #3A2755;
+    color: #fff;
+}
+
+.home-content .right-content>button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7.5px 15px;
+    transition: all 0.5s ease-in-out;
+    translate: 0 -0.4vh;
+}
+
+.home-content .left-content>button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7.5px 15px;
+    transition: all 0.5s ease-in-out;
+    translate: 0 -0.4vh;
+}
+
+.home-content .image-content {
+    width: 30%;
+    height: 90vh;
+    position: absolute;
+    left: 40%;
+    bottom: 0%;
+}
+
+.home-content .image-content img {
+    width: 100%;
+    margin: auto 0;
+    padding: 0;
+    position: relative;
+    top: 25%;
+    transform: scale(2);
+}
+
+.home-content .image-content img:hover {
+    transition: all 1s ease-in-out;
+}
+
+.home-content .right-content {
+    float: right;
+    width: 30%;
+    height: 90vh;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    text-align: right;
+    color: #fff;
+}
+
+.home-content .left-content .arrow:hover {
+    padding-left: 80px;
+    transition: all 1s ease-in-out;
+}
+
+.home-content .right-content .arrow:hover {
+    padding-right: 80px;
+    transition: all 1s ease-in-out;
+}
+
+/* End Home */
+/* Start Products */
+.products {
+    background-image: radial-gradient(#debafa, #744eb2);
+    height: 140vh;
+    overflow: visible;
+    position: relative;
+}
+
+.products .head {
+    height: 20vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.products .head h1 {
+    width: 100%;
+    vertical-align: auto;
+    font-size: 6rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.products .head h1 span {
+    color: #744EB2;
+}
+
+.products .image {
+    float: left;
+    position: relative;
+    left: 0%;
+    top: 0vh;
+    width: 60%;
+    height: 110vh;
+    margin: 0;
+    overflow: visible;
+    z-index: 2;
+}
+
+.products .image img:nth-of-type(1):hover,
+.products .image img:nth-of-type(2):hover,
+.products .image img:nth-of-type(3):hover,
+.products .image img:nth-of-type(4):hover,
+.products .image img:nth-of-type(5):hover {
+    position: absolute;
+    translate: 0 -50px;
+    padding-bottom: 50px;
+    transition: all .6s ease-in-out;
+}
+
+.products .image img:nth-of-type(1) {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.products .image img:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+}
+
+.products .image img:nth-of-type(3) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+}
+
+.products .image img:nth-of-type(4) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+}
+
+.products .image img:nth-of-type(5) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+}
+
+.flavor {
+    z-index: -1;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-size: 8rem;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 15vh;
+}
+
+.products .control {
+    float: right;
+    position: absolute;
+    top: 30vh;
+    right: 0;
+    width: 35%;
+    height: 60vh;
+    margin: 20vh 0;
+    text-align: start;
+    padding: 0 25px;
+    color: #fff;
+}
+
+.products .control h1 {
+    margin: 3vh 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.products .control h3 {
+    margin: 3vh 0;
+    font-size: 1.5rem;
+}
+
+.products .control p {
+    margin: 3vh 0;
+    font-weight: 600
+}
+
+.products .control .selection {
+    height: 7vh;
+    padding-left: 20px;
+}
+
+.products .control .selection .circle {
+    content: "";
+    position: relative;
+    display: inline;
+    float: left;
+    box-sizing: border-box;
+    margin: 1vh;
+    padding: 2.5vh;
+    background-color: #fe9a98;
+    border-radius: 50%;
+}
+
+.products .control .selection .circle:hover {
+    background-color: rgb(206, 0, 0);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.products .control button {
+    color: #fff;
+    background-color: #3A2755;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 20px;
+    margin: 20px 0;
+    border: 0;
+}
+
+.products .control button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7.5px 15px;
+    transition: all 0.5s ease-in-out;
+    translate: 0 -0.4vh;
+}
+
+/* End Products */
+/* Start Store */
+.store {
+    height: 115vh;
+    background-color: #3A2755;
+}
+
+.store .store-head {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.store .store-head h1 {
+    width: 100%;
+    font-size: 6rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.store .store-head h1 span {
+    color: #FF6A67;
+}
+
+.store .store-content {
+    width: 100%;
+    position: relative;
+}
+
+.store .store-content .map {
+    float: left;
+    width: 50%;
+}
+
+.store .store-content .map iframe {
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+}
+
+.store .store-content .contact {
+    float: right;
+    width: 40%;
+    padding: 100px 20px;
+}
+
+.store .store-content .contact * {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px !important;
+}
+
+.store .store-content .contact a {
+    color: #FF6A67;
+}
+
+/* End Store */
+/* Start mail */
+
+.mail {
+    background-image: url(./images/ContactBg.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    height: 50vh;
+}
+
+.mail h1 {
+    font-size: 30px;
+}
+
+.mail h1:nth-child(1) {
+    font-weight: 800;
+    padding-top: 15vh;
+}
+
+.mail h1:nth-child(2) {
+    font-weight: 400;
+    margin-top: 2vh;
+}
+
+.mail input {
+    width: 30%;
+    height: 8vh;
+    border-radius: 4vh;
+    padding: 0 5vh;
+    font-size: 25px;
+    margin-top: 6vh;
+    border: 2.5px solid #FF6A67;
+}
+
+/* End mail */
+/* Start footer */
+
+.footer {
+    padding-top: 20vh;
+    width: 80%;
+    text-align: center;
+    color: #212529;
+}
+
+.footer .text {
+    width: 30%;
+    text-align: start;
+    float: left;
+}
+
+.footer h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: #FF6A67;
+}
+
+.footer p {
+    font-weight: 700;
+    line-height: 1.5;
+    text-wrap: wrap;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 40px auto;
+}
+
+.footer ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.footer ul li i {
+    font-size: 35px;
+    color: #000;
+}
+
+.footer ul li i:hover {
+    color: orangered;
+    transition: all .5s ease-in-out;
+}
+
+.footer .image {
+    width: 30%;
+    float: right;
+}
+
+.footer .image img {
+    width: 100%;
+    scale: 1.4;
+}
+
+.footer .note {
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    margin: 20px auto;
+    font-size: 25px;
+    font-weight: 600
+}
+
+.footer .note span {
+    color: #FF6A67;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+/* End footer */
+
+/* release hover effect */
+button,
+i,
+img,
+div,
+a,
+.arrow {
+    transition: all .5s ease-in-out;
+}
